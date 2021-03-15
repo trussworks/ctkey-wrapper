@@ -55,6 +55,10 @@ export CTKEY_USERNAME=<EUA ID>
 export CTKEY_PASSWORD=<EUA PASSWORD>
 ```
 
+The `AWS_ACCOUNT_ID` environment variable will also need to be set. On EASi, we
+set this in a `.envrc` file within each account's subdirectory (dev, impl, prod,
+etc.).
+
 Currently this also requires the user to be running the openconnect-tinyproxy
 container [here](https://github.com/trussworks/openconnect-tinyproxy) to connect
 to Cloudtamer.
