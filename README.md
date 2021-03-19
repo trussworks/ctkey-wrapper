@@ -43,7 +43,7 @@ for an example of how to structure the infra repository.
 The `bin` directory typically contains an `aws-vault-wrapper` script with
 symlinks for things like `aws`, `chamber`, `packer`, `terraform`, etc. depending
 on the project's needs. `ctkey-wrapper` serves a similar purpose as the
-`aws-vault-wrapper` on other project.
+`aws-vault-wrapper` on other projects.
 
 To use `ctkey-wrapper`, add the following environment variables to `.envrc` or
 `.envrc.local`:
