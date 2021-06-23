@@ -7,14 +7,7 @@
 #   It expects the command you want to run is symlinked to this file.
 #
 #   Set the `CTKEY_USERNAME` and `CTKEY_PASSWORD` environment variables in
-#   .envrc.local or another suitable location. These are are the same
-#   credentials used for logging into Cloudtamer and will need to be updated
-#   whenever your Cloudtamer credentials are updated.
-#
-#   Currently this also requires the user to be running the
-#   openconnect-tinyproxy container
-#   (https://github.com/trussworks/openconnect-tinyproxy) to connect to
-#   Cloudtamer.
+#   .envrc.local or another suitable location.
 #
 #   This script will exit with error when called directly, unless the
 #   CTKEY_WRAPPER_OVERRIDE environment variable is set to any value other than
@@ -98,7 +91,7 @@ else
   # check that the vpn is up
   proxy_running="$(docker ps --quiet --filter "ancestor=openconnect-tinyproxy" --filter "status=running")"
   if [[ -z "$proxy_running" ]]; then
-    _error "Openconnect-tinyproxy container not running. Please start the CMS VPN Proxy container."
+    _error "Openconnect-tinyproxy container not running."
     (((errors++)))
   fi
 
