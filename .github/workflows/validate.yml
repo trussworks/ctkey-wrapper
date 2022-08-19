@@ -1,0 +1,8 @@
+name: validate
+
+on:
+  workflow_call:
+
+jobs:
+  validate:
+    uses: trussworks/shared-actions/.github/workflows/validate.yml@main
