@@ -2,7 +2,7 @@
 
 `ctkey-wrapper` is a small bash script that runs the `ctkey` command and sets your
 AWS environment variables to the key returned then runs the original command you
-typed.
+typed. I am adding this for testing
 
 Download and unzip the ctkey file onto your local computer. Move the executable
 that is applicable to your system (e.g., Mac/OS X) to a directory in your PATH.
